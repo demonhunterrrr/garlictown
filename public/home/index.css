@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body {
     font-family: 'Inter', sans-serif;
-    background: no-repeat center center fixed url("https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2018/07/istock-831303788.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: no-repeat center center fixed url("https://tinyurl.com/mwtuhsc6");
     background-size: cover;
     text-align: center;
+    transition: background-image 0.5s;
 }
 
 button {
