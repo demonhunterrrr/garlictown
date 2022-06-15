@@ -1,2 +1,2 @@
 # garlictown
-garlictown.com website ok? it's literally not that hard to understand.
+it's literally just the [garlictown.org](garlictown.org) website. It's not that hard to understand.
