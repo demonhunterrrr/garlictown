@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background: no-repeat center center fixed url("imgs/garlic.webp");
+    background-size: cover;
+    text-align: center;
+    transition: background-image 0.5s;
+}
+
+button {
+    margin-top: 200px;
+    height: 60px;
+    width: 150px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #333;
+    background-color: #333;
+    font-family: inherit;
+    color: #fff;
+    transition: border-color 0.5s, background-color 0.5s, filter 0.5s;
+    touch-action: manipulation;
+}
+
+button:hover {
+    border-color: #80a;
+    background-color: #80a;
+    filter: drop-shadow(0 0 1rem #dd00ff);
+}
