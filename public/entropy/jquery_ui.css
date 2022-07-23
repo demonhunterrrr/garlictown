@@ -1,0 +1,42 @@
+/* importing a copy of the best font, helvetica neue 😩😩😩 */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* modal overlay styling */
+.ui-widget-overlay {
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+/* dialog box styling */
+.ui-dialog {
+    background-color: #c91122;
+    border-style: solid !important; 
+    border-width: 10px !important;
+    border-color: #c91122 !important;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem #c91122);
+    text-align: center;
+    
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+
+#username_info {
+    margin-top: -5px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+#username_input {
+    background-color: #eb3344;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #da2233;
+    margin-top: 10px;
+    outline: none;
+    font-family: 'Inter' sans-serif;
+}
