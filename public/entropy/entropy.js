@@ -3,7 +3,7 @@
 $('#username').dialog({
     modal: true,
     draggable: false,
-    resizable: false
+    resizable: false,
 });
 
 // listening for username submitions
@@ -21,8 +21,7 @@ ws.addEventListener("message", msg => {
     if (msg.data == "false") {
         $("#username_info").text(`Sorry, but the username "${username}" is already being used. Please choose another one.`);
         return;
-    } else if (msg.data == "true") {
-        $('#username').dialog({hide:{effect:"explosion", duration:1000}});
+    } if (msg.data == "true") {
         $('#username').dialog("close");
         return;
     }
