@@ -39,6 +39,15 @@ h1 {
     transition: background-color 0.5s, border-color 0.5s, filter 0.5s;
     overflow-y: scroll;
     overflow-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+#messages > * {
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 #message {
