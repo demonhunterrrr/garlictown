@@ -9,6 +9,7 @@ $('#username').dialog({
 // listening for username submitions
 $('#username_form').on("submit", e => {
     username  = $('#username_input').val();
+    if (onlySpaces(username)) {e.preventDefault(); return}
     ws.send(["username_req",username]);
     e.preventDefault()
 });
@@ -31,13 +32,16 @@ ws.addEventListener("message", msg => {
 
     // creating new message on page
     $("#messages").append(`<p>${msg[0]}</p>`);
-
+    messages = document.querySelector("#messages").children;
+    messages[messages.length - 1].scrollIntoView({ block: 'nearest', inline: 'start' })
     // adding to client counter
     $("#client_counter").text(msg[1]);
 });
 
 // listening for message submitions
 $('#message_form').on("submit", e => {
+    // checking for banned messages
+    if (onlySpaces($('#message').val())) {e.preventDefault(); return}
     // sending data to websocket
     ws.send(`[${username}] ${$('#message').val()}`);
 
