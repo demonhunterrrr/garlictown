@@ -1,0 +1,21 @@
+/* importing a copy of the best font, helvetica neue */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* just basic body stuff, mainly background color and font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* the actual canvas with the game */
+canvas {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -0.5px; /* have this because its not perfectly centered for some reason */
+
+    /* ok so apparently, when you resize a canvas, 
+    you have to do it in html or js or else the
+    stuff inside the canvas will get distorted,
+    so the resize code is in the js file. */
+}
